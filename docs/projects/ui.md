@@ -1,26 +1,26 @@
 # hugo-ui
 
-独立设计系统 Monorepo，同时支持 React 和 Vue 3 组件库，通过 npm 包发布。
+Standalone design system monorepo with React and Vue 3 component libraries, published as npm packages.
 
-- **仓库**：[HugoHZXu/hugo-ui](https://github.com/HugoHZXu/hugo-ui)
-- **技术栈**：React · Vue 3 · TypeScript · Tailwind CSS · MUI · Emotion · Storybook · Changesets · pnpm monorepo
+- **Repository**: [HugoHZXu/hugo-ui](https://github.com/HugoHZXu/hugo-ui)
+- **Tech Stack**: React · Vue 3 · TypeScript · Tailwind CSS · MUI · Emotion · Storybook · Changesets · pnpm monorepo
 
 ## Packages
 
-| 包 | 说明 |
+| Package | Description |
 |---|---|
-| `@hugo-ui/mui` | React 组件，基于 MUI + Emotion，支持主题和 i18n |
-| `@hugo-ui/shadcn` | React 组件，基于 Tailwind CSS，shadcn 风格 |
-| `@hugo-ui/shadcn-vue` | Vue 3 组件，基于 Tailwind CSS，shadcn-vue 风格 |
-| `@hugo-ui/storybook` | React Storybook 演示与可视化测试 |
-| `@hugo-ui/storybook-vue` | Vue Storybook 演示与可视化测试 |
+| `@hugo-ui/mui` | React components built with MUI + Emotion, with theming and i18n support |
+| `@hugo-ui/shadcn` | React components using Tailwind CSS, shadcn-style patterns |
+| `@hugo-ui/shadcn-vue` | Vue 3 components using Tailwind CSS, shadcn-vue conventions |
+| `@hugo-ui/storybook` | React Storybook for demos and visual testing |
+| `@hugo-ui/storybook-vue` | Vue Storybook for demos and visual testing |
 
 ## Live Demos
 
-- React Storybook：[https://hugohzxu.github.io/hugo-ui/](https://hugohzxu.github.io/hugo-ui/)
-- Vue Storybook：[https://hugohzxu.github.io/hugo-ui/vue/](https://hugohzxu.github.io/hugo-ui/vue/)
+- React Storybook: [https://hugohzxu.github.io/hugo-ui/](https://hugohzxu.github.io/hugo-ui/)
+- Vue Storybook: [https://hugohzxu.github.io/hugo-ui/vue/](https://hugohzxu.github.io/hugo-ui/vue/)
 
-## 使用方式
+## Usage
 
 ```bash
 # MUI + Emotion
@@ -30,4 +30,4 @@ npm install @hugo-ui/mui @mui/material @mui/icons-material @emotion/react @emoti
 npm install @hugo-ui/shadcn react react-dom
 ```
 
-版本管理通过 Changesets，发布到 npm `@hugo-ui` organization。
+Versioning and releases are managed with Changesets, published to the `@hugo-ui` npm organization.
