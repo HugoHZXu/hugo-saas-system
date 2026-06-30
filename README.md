@@ -2,7 +2,9 @@ English | [简体中文](README.zh-CN.md)
 
 # Hugo SaaS System
 
-A complete B2B SaaS product suite portfolio covering backend services, a cross-framework design system, web consoles, a desktop tool, and dev tooling. Runs locally with synthetic demo data — zero external dependencies.
+A complete B2B SaaS product suite portfolio covering backend services, a cross-framework design system, web consoles, a desktop tool, and AI dev tooling.
+
+📖 **Documentation**: [https://hugohzxu.github.io/hugo-saas-system/](https://hugohzxu.github.io/hugo-saas-system/)
 
 ## Projects
 
@@ -20,7 +22,7 @@ A complete B2B SaaS product suite portfolio covering backend services, a cross-f
 
 | Project | Tech Stack | Description | Repository |
 |------|--------|------|------|
-| design-contract-mcp | TypeScript · MCP (Model Context Protocol) · Node.js | Contract-first Design-to-Code MCP Server that consumes hugo-ui AI Contracts for context building and React code validation | [GitHub](https://github.com/HugoHZXu/design-contract-mcp) |
+| design-contract-mcp | TypeScript · MCP (Model Context Protocol) · Node.js | Figma-to-Code MCP Server: bridges Figma designs to React code via contract-first context building and AI-generated code validation | [GitHub](https://github.com/HugoHZXu/design-contract-mcp) |
 
 ## Architecture
 
@@ -36,34 +38,10 @@ hugo-entitlement-importer-desktop (Electron desktop)
                                   ▲
                                   │ AI Contract (GitHub Release)
                                   │
-                     design-contract-mcp (MCP Server: context + validation)
+                     design-contract-mcp (Figma-to-Code MCP Server: context + validation)
 ```
 
 - All frontend projects share the [hugo-ui](https://github.com/HugoHZXu/hugo-ui) component library
 - [hugo-saas-console](https://github.com/HugoHZXu/hugo-saas-console) uses React with `@hugo-ui/mui`
 - [hugo-entitlement-console](https://github.com/HugoHZXu/hugo-entitlement-console) and the desktop tool use Vue 3 with `@hugo-ui/shadcn-vue`
-- [design-contract-mcp](https://github.com/HugoHZXu/design-contract-mcp) consumes AI Contract artifacts published by hugo-ui via GitHub Releases, providing design system context and code validation for AI coding tools
-
-## Local Development
-
-Start projects independently in dependency order: backend first, then frontends. See each project's README for specific steps.
-
-The documentation site is built with VitePress:
-```bash
-npm install
-npm run docs:dev
-```
-
-## GitHub Pages Deployment
-
-A `.github/workflows/deploy.yml` workflow is configured to automatically build and deploy the VitePress docs when pushing to `main`.
-
-Before the first deployment, go to GitHub repository `Settings` → `Pages` and set `Build and deployment` → `Source` to `GitHub Actions`.
-
-The workflow automatically sets the VitePress `base` based on the repository name in GitHub Actions. If the repository is `hugo-saas-system`, the default deployment URL is:
-
-```text
-https://<username>.github.io/hugo-saas-system/
-```
-
-For custom domains or special paths, set the `VITEPRESS_BASE` variable in `Settings` → `Secrets and variables` → `Actions` → `Variables` (use `/` for root domain deployment).
+- [design-contract-mcp](https://github.com/HugoHZXu/design-contract-mcp) is a Figma-to-Code MCP Server that consumes AI Contract artifacts published by hugo-ui via GitHub Releases, providing design context resolution and React code validation for AI coding tools (Cursor, Trae, etc.)

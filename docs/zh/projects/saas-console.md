@@ -4,7 +4,7 @@ B2B SaaS 运营管理后台，采用 Module Federation 微前端架构。
 
 - **仓库**：[HugoHZXu/hugo-saas-console](https://github.com/HugoHZXu/hugo-saas-console)
 - **技术栈**：React · TypeScript · Module Federation · GraphQL · pnpm monorepo · Vitest
-- **UI 组件库**：`@hugo-ui/mui`（作为 npm 包引入，无源码 symlink）
+- **UI 组件库**：`@hugo-ui/mui`
 
 ## 模块结构
 

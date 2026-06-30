@@ -4,7 +4,7 @@ B2B SaaS admin dashboard built with Module Federation micro-frontend architectur
 
 - **Repository**: [HugoHZXu/hugo-saas-console](https://github.com/HugoHZXu/hugo-saas-console)
 - **Tech Stack**: React · TypeScript · Module Federation · GraphQL · pnpm monorepo · Vitest
-- **UI Library**: `@hugo-ui/mui` (consumed as npm package, no source symlinks)
+- **UI Library**: `@hugo-ui/mui`
 
 ## Module Structure
 

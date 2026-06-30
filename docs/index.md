@@ -35,7 +35,7 @@ features:
     details: Bulk entitlement importer with CSV validation, impact preview, chart analysis, and result export.
     link: /projects/entitlement-importer-desktop
   - icon: 🤖
-    title: Design-to-Code MCP Server
-    details: Contract-first design-to-code MCP server. Consumes design system AI Contracts for context building and React code validation.
+    title: Figma-to-Code MCP Server
+    details: "MCP server for AI coding tools: bridges Figma designs to React code via contract-first context building and generated code validation."
     link: /projects/design-contract-mcp
 ---
